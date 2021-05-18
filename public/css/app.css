@@ -1,0 +1,56 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main, footer {
+    margin: 30px;
+}
+
+.posts {
+    width: 1070px;
+    margin: 20px auto;
+}
+
+.post {
+    padding: 15px;
+    margin: 50px auto;
+    width: 500px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    position: relative;
+}
+
+.header-post {
+    border-bottom: 1px solid black;
+}
+
+.header-post > p {
+    text-align: center;
+}
+
+.float-top-right {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.float-bottom-left {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.post-content {
+    margin-top: 5px;
+    word-wrap: break-word;
+    padding-bottom: 40px;
+}
+
+.bottom-right {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    color: grey;
+}
+
