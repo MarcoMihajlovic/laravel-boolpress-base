@@ -20,7 +20,12 @@
                 <p>
                     {{$post -> content}}
                 </p>
-                <a class="btn btn-danger float-bottom-left" href="">Elimina post</a>
+                
+                <form action="{{route('post.destroy', $post['id'])}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger float-bottom-left">Elimina Post</button>
+                </form>
                 <p class="bottom-right">{{$post -> updated_at}}</p>
             </div>
         </div>
