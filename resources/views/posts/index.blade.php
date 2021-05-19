@@ -6,6 +6,12 @@
 
     <h1>I nostri post</h1>
 
+    @if (session('status'))
+        <div class="alert alert-success">
+        {{session('status')}}
+        </div>
+    @endif
+
     <a href="{{route('post.create')}}" class="btn btn-primary">Crea un nuovo post</a>
 
     <div class="posts">
